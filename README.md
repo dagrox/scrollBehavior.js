@@ -1,5 +1,6 @@
 # scrollBehavior.js
 
+![preview](https://raw.githubusercontent.com/dagrox/scrollBehavior.js/master/assets/png/Logo_schwarz.png)
 
 A simple and easy to use library that creates fullscreen scrolling websites (also known as single page websites or onepage sites) and adds landscape sliders inside the sections of the site.
 
