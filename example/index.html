@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>scrollBehavior.js | Demo</title>
+  <meta name="author" content="Daniel Grohmann">
+  <meta name="description" content="scrollBehavior Demo">
+
+  <link rel="stylesheet" href="../src/css/scrollBehavior.css">
+</head>
+
+<body>
+  <div class="header">
+    <div class="logo">
+      <a href="#" class="logo__link">
+        <img src="../assets/svg/logo-white.svg" alt="logo" class="logo__image">
+      </a>
+    </div>
+    <div class="nav">
+      <ul class="nav__list">
+        <li class="nav__item">
+          <a href="https://github.com/dagrox/scrollBehavior.js" class="nav__link">Download</a>
+        </li>
+        <li class="nav__item">
+          <a href="https://github.com/dagrox/scrollBehavior.js" class="nav__link">Docs</a>
+        </li>
+        <li class="nav__item">
+          <a href="mailto:grohmann@bitloft.de" class="nav__link">Contact</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+  
+  <div class="container">
+    <section class="section">
+      <h1>Slide 1</h1>
+    </section>
+    <section class="section">
+      <h1>Slide 2</h1>
+    </section>
+    <section class="section">
+      <h1>Slide 3</h1>
+    </section>
+    <section class="section">
+      <h1>Slide 4</h1>
+    </section>
+  </div>
+  <div class="nav-arrows">
+    <div class="nav-arrows__prev"></div>
+    <div class="nav-arrows__next"></div>
+  </div>
+
+
+  <script src="../src/js/scrollBehavior.js"></script>
+  <script>
+    let scrollBehavior = new ScrollBehavior('.container', {
+      autoInit: true,
+      mode: 'horizontal',
+      autoScroll: false,
+      autoScrollSpeed: 3000,
+      recordHistory: true,
+      keyboardScrolling: true,
+      arrows: {
+        enabled: true,
+        prev: {
+          selector: '.nav-arrows__prev'
+        },
+        next: {
+          selector: '.nav-arrows__next'
+        }
+      }
+    });
+    // scrollBehavior.initialise();
+
+  </script>
+</body>
+
+</html>
